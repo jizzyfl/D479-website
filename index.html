@@ -127,7 +127,7 @@
             color: #27ae60;
         }
 
-        /* Featured Deals */
+        /* Featured Packages */
         .featured-section {
             padding: 60px 40px;
             background-color: #FFFFFF;
@@ -775,7 +775,8 @@
             <a onclick="showPage('homepage')" class="nav-link active">HOME</a>
             <a onclick="showPage('explore')" class="nav-link">EXPLORE</a>
             <a onclick="showPage('experiences')" class="nav-link">EXPERIENCES</a>
-            <a onclick="showPage('packages')" class="nav-link">DEALS</a>
+            <a onclick="showPage('packages')" class="nav-link">PACKAGES</a>
+            <a onclick="showPage('faq')" class="nav-link">FAQ</a>
             <a onclick="alert('Login page not yet built')" class="nav-link">LOGIN</a>
         </ul>
     </nav>
@@ -788,13 +789,13 @@
             <p>Affordable Adventures · Amazing Experiences · Community Vibes</p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="showPage('explore')">EXPLORE ACCOMMODATIONS</button>
-                <button class="btn btn-secondary" onclick="showPage('packages')">BROWSE DEALS</button>
+                <button class="btn btn-secondary" onclick="showPage('packages')">BROWSE PACKAGES</button>
             </div>
         </div>
 
-        <!-- Featured Deals -->
+        <!-- Featured Packages -->
         <div class="featured-section">
-            <h2 class="section-title">FEATURED DEALS</h2>
+            <h2 class="section-title">FEATURED PACKAGES</h2>
             <div class="cards-grid">
                 <!-- Card 1: Hostel -->
                 <div class="card">
@@ -881,6 +882,11 @@
                     <div class="filter-item"><input type="radio" name="rating" checked> <label>4.0+ stars (42)</label></div>
                     <div class="filter-item"><input type="radio" name="rating"> <label>4.5+ stars (35)</label></div>
                     <div class="filter-item"><input type="radio" name="rating"> <label>4.8+ stars (15)</label></div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">GROUP SIZE</div>
+                    <input type="number" id="groupsize" min="1" placeholder="Enter number of people" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
                 </div>
 
                 <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">APPLY FILTERS</button>
@@ -1312,6 +1318,78 @@
                 📞 Phone: +1 (123) 456-7890<br>
                 📧 Email: support@taniti.com<br>
                 💬 Live Chat: Available 24/7
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE: FAQ -->
+    <div id="faq" class="page">
+        <div class="hero" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><rect fill="%23667eea" width="1440" height="300"/></svg>'); min-height: 300px;">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your Guide to Staying Safe & Understanding Our Policies</p>
+        </div>
+
+        <div style="padding: 60px 40px; background-color: #FFFFFF;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <!-- Safety Section -->
+                <div style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: bold; color: #2c3e50; margin-bottom: 30px; border-bottom: 3px solid #27ae60; padding-bottom: 15px;">🛡️ Safety on the Island</h2>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Is Taniti Island safe for travelers?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Yes, Taniti Island is a safe destination for travelers. We have dedicated security personnel, well-lit areas in all accommodations, and 24/7 support staff. We recommend following basic travel safety practices such as being aware of your surroundings and keeping valuables secure.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">What should I do in case of an emergency?</h3>
+                        <p style="color: #555555; line-height: 1.8;">All accommodations have 24/7 front desk support. Emergency numbers are posted in your room. For medical emergencies, dial 911 or contact your accommodation staff immediately. We also provide emergency contact cards at check-in.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Are the beaches safe to swim in?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Most beaches on Taniti Island are safe for swimming. We recommend swimming during daylight hours in designated areas. Always check with your accommodation for current beach conditions and any advisories before heading out.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Should I get travel insurance?</h3>
+                        <p style="color: #555555; line-height: 1.8;">We strongly recommend purchasing travel insurance that covers medical emergencies, trip cancellation, and lost belongings. It provides peace of mind and is particularly useful for international travelers.</p>
+                    </div>
+                </div>
+
+                <!-- Resort Policies Section -->
+                <div style="margin-bottom: 50px;">
+                    <h2 style="font-size: 28px; font-weight: bold; color: #2c3e50; margin-bottom: 30px; border-bottom: 3px solid #27ae60; padding-bottom: 15px;">📋 Resort Policies</h2>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">What is your check-in and check-out policy?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Standard check-in time is 3:00 PM and check-out time is 11:00 AM. Early check-in and late check-out may be available upon request at no additional cost if the room is available. Please contact your accommodation in advance.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">What is your cancellation policy?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Most accommodations offer free cancellation up to 48 hours before check-in. Some properties may have different cancellation policies, so please check your booking confirmation. Cancellations made within 48 hours of check-in may incur fees.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Are pets allowed?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Pet policies vary by accommodation. Some properties welcome pets for a small additional fee, while others have restrictions. Please check with your specific accommodation or contact us during booking to discuss pet arrangements.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">What are your quiet hours?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Quiet hours are typically from 10:00 PM to 8:00 AM. We ask all guests to be respectful of other guests during these hours. Noise complaints can result in warnings or, in severe cases, removal from the property.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Is smoking allowed?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Most of our accommodations are non-smoking properties. Some have designated smoking areas. If you need a smoking room, please inform us during booking. Smoking in non-smoking areas may result in cleaning fees.</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 10px;">What is included in the room rate?</h3>
+                        <p style="color: #555555; line-height: 1.8;">Room rates typically include accommodation and basic amenities such as bed linens, towels, and access to common areas. Many properties include Wi-Fi and breakfast. For specific details about what's included at your accommodation, please check your booking confirmation.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
